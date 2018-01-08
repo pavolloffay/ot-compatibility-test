@@ -10,12 +10,3 @@ mvn clean install
 cd module2
 mvn exec:java -Dexec.mainClass="sk.loffay.ot.test.module2.Main"
 ```
-
-It produces:
-```bash
-java.lang.NoSuchMethodError: io.opentracing.tag.BooleanTag.set(Lio/opentracing/BaseSpan;Ljava/lang/Boolean;)V
-	at sk.loffay.ot.test.TracedClass$1.run(TracedClass.java:29)
-	at java.lang.Thread.run(Thread.java:748)
-```
-
-

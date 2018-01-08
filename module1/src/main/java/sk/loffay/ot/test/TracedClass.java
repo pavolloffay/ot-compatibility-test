@@ -30,8 +30,6 @@ public class TracedClass {
         span.finish();
       }
     });
-
-    thread.start();
-    thread.join();
+    System.out.println(thread.getName());
   }
 }
