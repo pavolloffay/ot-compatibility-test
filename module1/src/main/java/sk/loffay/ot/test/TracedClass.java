@@ -22,10 +22,10 @@ public class TracedClass {
   }
 
   public void invoke2() throws InterruptedException {
+    final Span span = tracer.buildSpan("invoke").startManual();
     Thread thread = new Thread(new Runnable() {
       @Override
       public void run() {
-        Span span = tracer.buildSpan("invoke").startManual();
         Tags.ERROR.set(span, true);
         span.finish();
       }

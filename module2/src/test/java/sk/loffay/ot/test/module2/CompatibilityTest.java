@@ -1,7 +1,8 @@
-package sk.loffay.ot.test;
+package sk.loffay.ot.test.module2;
 
 import io.opentracing.mock.MockTracer;
 import org.junit.Test;
+import sk.loffay.ot.test.TracedClass;
 
 /**
  * @author Pavol Loffay
